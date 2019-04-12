@@ -1,8 +1,5 @@
 -- Copyright (C) 2019 Ren Finkle
 --
--- This file is released under the terms of the CC BY 4.0 license.
--- See https://creativecommons.org/licenses/by/4.0/ for more information.
---
 -- Version: Beta 2 Public, April 12, 2019
 local version = "Beta 2 Public"
 -- Check is UI available
