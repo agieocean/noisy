@@ -3,8 +3,8 @@
 -- This file is released under the terms of the CC BY 4.0 license.
 -- See https://creativecommons.org/licenses/by/4.0/ for more information.
 --
--- Version: Beta 1 Public, April 11, 2019
-local version = "Beta 1 Public"
+-- Version: Beta 2 Public, April 12, 2019
+local version = "Beta 2 Public"
 -- Check is UI available
 if not app.isUIAvailable then
     return
@@ -646,12 +646,20 @@ function createDLG(
         options = poptions
     }
     dlg:newrow()
+    -- aoptions, table (mixed): Table of addstop options, varies on whether addstop value exists
+    local aoptions = {}
+    if addstop and addstop ~= "Choose" then
+        aoptions = {addstop, "Choose", 1, 2, 3, 4, 5, 6}
+        table.remove(aoptions, addstop+2)
+    else
+        aoptions = {"Choose", 1, 2, 3, 4, 5, 6}
+    end
     -- NOTE: Better options setup forthcoming on API updates
     -- NOTE: If extra color stops is set to choose and addstops is clicked the color stops dialog is closed
     dlg:combobox {
         id = "addstop",
         label = "Extra color stops:",
-        options = {addstop or "Choose", 1, 2, 3, 4, 5, 6}
+        options = aoptions
     }
     -- Clicking button adds stops
     dlg:button {
