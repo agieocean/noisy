@@ -31,11 +31,11 @@
     + The code uses the GNU GPLv3 license because of the inclusion of the Perlin algorithm
     + Note (Pre emptive): You do not have to mention the use of this plugin in any artwork
 
-> ## Okay now that we got that out of the way!
+## Okay now that we got that out of the way!
 
-> Welcome to the Noisy tool! This is a tool to do what I've implemented in a number of other languages (but not quite as friendly), noise rendering. There are a lot of different uses for this tool, some common ones include: map generation, cloud generation, starscape generation, and even bumpmap generation
+#### Welcome to the Noisy tool! This is a tool to do what I've implemented in a number of other languages (but not quite as friendly), noise rendering. There are a lot of different uses for this tool, some common ones include: map generation, cloud generation, starscape generation, and even bumpmap generation
 
-> Let's go over a few things
+### Let's go over a few things:
 
 ## Main dialog
 + Scale
