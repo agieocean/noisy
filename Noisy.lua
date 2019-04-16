@@ -1,7 +1,7 @@
 -- Copyright (C) 2019 Ren Finkle
 --
--- Version: Beta 2 Public, April 12, 2019
-local version = "Beta 2 Public"
+-- Version: Beta 3 Public, April 12, 2019
+local version = "Beta 3 Public"
 -- Check is UI available
 if not app.isUIAvailable then
     return
@@ -464,8 +464,8 @@ function gen(
     end
     -- cstop_range, table (float): Table of 'normalized' color stop balances, global contextualization
     -- Begin contextualization --
-    local cstops_range = {cstop_bounds.lower}
     if colorStops and color then
+        local cstops_range = {cstop_bounds.lower}
         local cstop_mult = (cstop_bounds.upper - cstop_bounds.lower) / (#colorStops - 1)
         for it, cstop in ipairs(colorStops) do
             local addbound = (cstop / 100) * cstop_mult
