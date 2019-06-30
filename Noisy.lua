@@ -465,7 +465,7 @@ function gen(
     -- cstop_range, table (float): Table of 'normalized' color stop balances, global contextualization
     -- Begin contextualization --
     if colorStops and color then
-        local cstops_range = {cstop_bounds.lower}
+        cstops_range = {cstop_bounds.lower}
         local cstop_mult = (cstop_bounds.upper - cstop_bounds.lower) / (#colorStops - 1)
         for it, cstop in ipairs(colorStops) do
             local addbound = (cstop / 100) * cstop_mult
